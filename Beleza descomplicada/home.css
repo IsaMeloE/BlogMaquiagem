@@ -1,0 +1,256 @@
+body{
+    font-family: "Lora";
+    font-size: 15px;
+    margin:0 ;
+    padding: 0;
+    background-color: rgb(255, 244, 241);
+}
+
+header{
+    width: 100vw;
+    padding: 28px 8px;
+    margin: 0 ;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+   
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-menu {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px ;
+}
+
+#nav-list{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#nav-list ul{
+    list-style-type: none;
+}
+
+#nav-list ul li{
+    display: inline-block;
+    margin: 0 40px;
+    }
+
+#nav-list a{
+    text-decoration: none;
+    color:rgb(255, 255, 255) ;
+}
+#nav-list a.active{
+    text-decoration: none;
+    color:rgb(245, 105, 163) ;
+}
+#nav-list a:hover{
+    color: rgb(245, 105, 163);
+    transition: 0.2s;
+}
+
+
+.cta{
+    flex: 1;
+    margin: 0;
+}
+
+.titulo-destaque {
+    background-image: url('./img/Sombra.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    padding: 50px 0; 
+    margin: 0;
+    text-align: center; 
+    color: white; 
+    position: relative; 
+}
+
+.titulo-destaque h1 {
+    position: relative; 
+    z-index: 1; 
+}
+
+
+.titulo-destaque::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(69, 39, 45, 0.408); 
+    z-index: 0; 
+}
+
+
+span{
+    color: rgb(244, 193, 214);
+}
+
+.slogan {
+    color: #ffffff; 
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    transition: color 0.3s;
+    position: relative; 
+
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+}
+.btn-default{
+    color: rgb(255, 249, 254);
+    text-decoration: none;
+    width: 100px;
+    height: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 105, 163);
+    border-radius:10px ;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgb(176, 110, 138);
+    cursor: pointer;
+    transition:.3s ease;
+}
+
+.btn-default:hover {
+    background-color: rgb(222, 118, 161);
+    
+}
+
+.description{
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+}
+
+.text {
+    padding: 20px; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+    box-sizing: border-box;
+    background-color: rgb(248, 232, 239);
+    
+}
+
+.text p {
+    font-style: italic; 
+    font-family: "Lora", serif; 
+    color: rgb(105, 55, 55); 
+    font-size: 1.1em; 
+    line-height: 1.6; 
+    text-align: justify; 
+    border-left: 4px solid rgb(245, 105, 163); 
+    padding-left: 15px; 
+}
+
+hr {
+    border: 0;
+    height: 1px; 
+    background: linear-gradient(to right, rgba(226, 222, 224, 0.3), rgba(234, 171, 208, 0.7), rgba(212, 168, 187, 0.3));
+    margin: 40px 0; 
+}
+
+h3 {
+    padding: 20px;
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    text-align: center;
+    background: linear-gradient(to right, rgb(245, 105, 163), rgb(105, 55, 55));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 30px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 0.9px solid rgb(222, 118, 161); /* Adiciona uma borda azul */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(176, 110, 138);
+    margin: 10px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 300;
+    height: 200;
+}
+
+.card-content {
+    padding: 15px;
+    font-style: italic;
+}
+
+.card-title {
+    font-size: 1.1em;
+    font-style: normal;
+    margin: 0;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: rgb(245, 105, 163);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+}
+
+.card-button:hover {
+    background-color: rgb(222, 118, 161);
+    border: 1px solid rgb(176, 110, 138);
+}
+
+
+.rodape {
+    background-color: #ffffff;
+    color: #b6b6b6;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.rodape p {
+    margin: 0;
+}
